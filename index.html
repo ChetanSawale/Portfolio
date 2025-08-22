@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
 </head>
+
 <body>
-<nav>
+  <!-- Navbar -->
+  <nav>
     <h2>Portfolio</h2>
     <ul class="menu-links">
       <li><a href="#home">HOME</a></li>
@@ -17,248 +22,238 @@
       <li><a href="#projects">PROJECTS</a></li>
     </ul>
     <ul class="menu-logos">
-        <li>
-            <a href="https://twitter.com" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/your-username" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-        </li>
+      <li>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/your-username" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      </li>
       <li>
         <button id="darkModeToggle" aria-label="Toggle Dark Mode">
-            <img src="https://cdn-icons-png.freepik.com/512/9354/9354381.png" alt="Toggle dark mode" style="width: 24px; height: 24px;" />
+          <img src="light-mode.png" alt="Toggle dark mode" style="width: 24px; height: 24px;" />
         </button>
-        </li>
+      </li>
     </ul>
   </nav>
+
+  <!-- Hero Section -->
   <main>
     <div class="hero">
-        <h1>EXPLORE MY</h1>
-        <h1>PORTFOLIO</h1>
+      <h1>EXPLORE MY</h1>
+      <h1>PORTFOLIO</h1>
     </div>
+
     <div class="hero1">
-        <div class="one">
-            <p class="intro-text">Hello I'm <br><span>Chetan Sawale</span></p>
+      <div class="one">
+        <p class="intro-text">Hello I'm <br><span>Chetan Sawale</span></p>
+      </div>
+      <div class="two curved-right">
+        <img src="me.png" alt="Profile" />
+      </div>
+      <div class="one">
+        <p class="intro-text">
+          A passionate web developer crafting engaging and user-friendly digital experiences.
+        </p>
+        <div class="skill">
+          <p>UIUX</p>
+          <p>WEB DESIGN</p>
+          <p>LANDING PAGE</p>
+          <p>DEVELOPMENT</p>
         </div>
-        <div class="two curved-right">
-            <img src="me.png" alt="">
-        </div>
-        <div class="one">
-            <p class="intro-text">A passionate web developer crafting engaging and user-friendly digital experiences.</p>
-            <div class="skill">
-                <p>UIUX <br></p>
-                <p>WEB DESIGN</p>
-                <p>LANDING PAGE</p>
-                <p>DEVELOPMENT</p>
-                </ul>
-            </div>
-        </div>
+      </div>
     </div>
   </main>
-    <section id="skills" class="skills-section">
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section fade-in-section">
     <div class="con">
-        <h1>Professional Skills</h1>
+      <h1>Professional Skills</h1>
     </div>
-    
+
     <div class="skills-container">
-        
-        <!-- Left Side: Skills (50%) -->
-        <div class="sep">
+      <!-- Left Side -->
+      <div class="sep">
         <div class="skill-category">
-            <h3>Frontend Development</h3>
-            <ul>
+          <h3>Frontend Development</h3>
+          <ul>
             <li>HTML5 & CSS3</li>
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Tailwind CSS</li>
             <li>Responsive Design</li>
-            </ul>
+          </ul>
         </div>
+
         <div class="skill-category">
-            <h3>Backend Development</h3>
-            <ul>
+          <h3>Backend Development</h3>
+          <ul>
             <li>Node.js</li>
             <li>MongoDB</li>
             <li>Firebase</li>
-            </ul>
+          </ul>
         </div>
+
         <div class="skill-category">
-            <h3>Tools & Platforms</h3>
-            <ul>
+          <h3>Tools & Platforms</h3>
+          <ul>
             <li>Git & GitHub</li>
             <li>VS Code</li>
             <li>Postman</li>
             <li>Figma (UI Design)</li>
-            </ul>
+          </ul>
         </div>
+
         <div class="skill-category">
-            <h3>Soft Skills</h3>
-            <ul>
+          <h3>Soft Skills</h3>
+          <ul>
             <li>Problem Solving</li>
             <li>Team Collaboration</li>
             <li>Time Management</li>
             <li>Continuous Learning</li>
-            </ul>
+          </ul>
         </div>
-        </div>
+      </div>
 
-        <!-- Right Side: Experience or Anything Else (50%) -->
-        <div class="sep1">
-            <h1>A Blend of Technical Expertise and Creative Vision</h1>
-            <p>As a dedicated web developer, I bring a balanced mix of technical proficiency and creative problem-solving to every project. My expertise spans frontend development using HTML, CSS, JavaScript, and React, along with backend knowledge in Node.js, Express, and MongoDB. I take pride in crafting clean, responsive, and user-focused interfaces while ensuring performance and accessibility. With a solid foundation in version control, APIs, and modern design tools, I collaborate effectively with teams and adapt quickly to evolving technologies. My goal is to build web experiences that not only function flawlessly but also leave a lasting impression on users.</p>
+      <!-- Right Side -->
+      <div class="sep1">
+        <h1>A Blend of Technical Expertise and Creative Vision</h1>
+        <p>
+          As a dedicated web developer, I bring a balanced mix of technical proficiency and creative problem-solving to every project. My expertise spans frontend development using HTML, CSS, JavaScript, and React, along with backend knowledge in Node.js, Express, and MongoDB. I take pride in crafting clean, responsive, and user-focused interfaces while ensuring performance and accessibility. With a solid foundation in version control, APIs, and modern design tools, I collaborate effectively with teams and adapt quickly to evolving technologies. My goal is to build web experiences that not only function flawlessly but also leave a lasting impression on users.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-wrapper fade-in-section">
+    <!-- Left -->
+    <div class="about-left">
+      <h1>ABOUT<br>ME</h1>
+      <p>
+        I’m a passionate and driven web developer with a strong foundation in frontend and backend technologies. I love creating elegant, responsive, and accessible web applications that solve real-world problems. Currently in my third year of Computer Science, I’m actively expanding my skills and seeking opportunities to contribute to meaningful projects.
+      </p>
+      <p>
+        I enjoy solving real-world problems through code, and I’m always eager to learn new tools and frameworks. My core strengths lie in technologies like HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I'm also familiar with deployment platforms like Vercel and Netlify, and design tools such as Figma.
+      </p>
+
+      <div class="tech-cards-wrapper">
+        <h2>Technologies I Work With</h2>
+        <div class="tech-grid">
+          <div class="tech-card">HTML5</div>
+          <div class="tech-card">CSS3</div>
+          <div class="tech-card">JavaScript</div>
+          <div class="tech-card">React.js</div>
+          <div class="tech-card">Node.js</div>
+          <div class="tech-card">Express.js</div>
+          <div class="tech-card">MongoDB</div>
+          <div class="tech-card">Firebase</div>
+          <div class="tech-card">Tailwind CSS</div>
+          <div class="tech-card">Git & GitHub</div>
+          <div class="tech-card">Postman</div>
+          <div class="tech-card">Figma</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="about-right">
+      <img src="me.png" alt="Profile Picture" class="profile-img" />
+      <div class="info-box">
+        <h3 class="name">Chetan Sawale</h3>
+        <p class="title">CS Major Student</p>
+        <ul class="contact-details">
+          <li>📞 +91 9699486717</li>
+          <li>📧 sawalechetan102@gmail.com</li>
+          <li>📍 Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects-section fade-in-section">
+    <h1>My Work</h1>
+    <div class="projects-wrapper">
+      <div class="projects-left">
+        <p>
+          Welcome to my project showcase! Each project below reflects my journey as a developer—solving real-world problems, exploring new technologies, and continuously improving. From full-stack web applications to sleek frontend designs, these works represent my passion for clean code, usability, and performance.
+        </p>
+      </div>
+
+        <div class="projects-right">
+            <a href="https://artique-gallery.netlify.app/" target="_blank">
+                <img src="art.png" alt="Art Project">
+            </a>
+            <a href="https://example.com/car" target="_blank">
+                <img src="car.png" alt="Car Project">
+            </a>
+            <a href="https://example.com/music" target="_blank">
+                <img src="music.png" alt="Music Project">
+            </a>
+            <a href="https://example.com/podcast" target="_blank">
+                <img src="pod.png" alt="Podcast Project">
+            </a>
         </div>
 
     </div>
-    </section>
-    <!-- <section>
-        <div class="sep">
+  </section>
 
-        </div>
-        <div class="sep1">
-            About Me
-        </div>
-    </section> -->
-    <section id="about" class="about-wrapper">
-  <!-- Left Side -->
-        <div class="about-left">
-            <h1>ABOUT<br>ME</h1>
-            <p>
-                I’m a passionate and driven web developer with a strong foundation in frontend and backend technologies.
-                I love creating elegant, responsive, and accessible web applications that solve real-world problems. Currently
-                in my third year of Computer Science, I’m actively expanding my skills and seeking opportunities to contribute
-                to meaningful projects.
-            </p>
-            <p>
-                I enjoy solving real-world problems through code, and I’m always eager to learn new tools and frameworks. My core strengths lie in technologies like HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I'm also familiar with deployment platforms like Vercel and Netlify, and design tools such as Figma.
-            </p>
-            <div class="tech-cards-wrapper">
-                <h2>Technologies I Work With</h2>
-                <div class="tech-grid">
-                    <div class="tech-card">HTML5</div>
-                    <div class="tech-card">CSS3</div>
-                    <div class="tech-card">JavaScript</div>
-                    <div class="tech-card">React.js</div>
-                    <div class="tech-card">Node.js</div>
-                    <div class="tech-card">Express.js</div>
-                    <div class="tech-card">MongoDB</div>
-                    <div class="tech-card">Firebase</div>
-                    <div class="tech-card">Tailwind CSS</div>
-                    <div class="tech-card">Git & GitHub</div>
-                    <div class="tech-card">Postman</div>
-                    <div class="tech-card">Figma</div>
-                </div>
-            </div>
-        </div>
+  <!-- Contact -->
+  <section class="contact-section fade-in-section" id="connect">
+    <div class="contact-header">
+      <h1>Get in touch</h1>
+      <p>
+        Interested in collaborating, hiring, or just saying hello? I'd love to hear from you. Reach out using any of the options below!
+      </p>
+    </div>
 
-        <!-- Right Side -->
-        <div class="about-right">
-            <img src="me.png" alt="Profile Picture" class="profile-img" />
+    <div class="contact-cards">
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Send me a message</h3>
+        <p>Got a project idea, feedback, or just want to connect? Drop me a message — I'm always open to interesting conversations!</p>
+        <a href="mailto:yourname@gmail.com" class="card-button">Get in Touch →</a>
+      </div>
 
-            <div class="info-box">
-            <h3 class="name">Chetan Sawale</h3>
-            <p class="title">CS Major Student</p>
-            <ul class="contact-details">
-                <li>📞 +91 9699486717</li>
-                <li>📧 emma@example.com</li>
-                <li>📍 123 Your Street, City</li>
-            </ul>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <div class="icon">📍</div>
+        <h3>Location</h3>
+        <p>I'm currently based in Mumbai. Feel free to reach out — remote work and collaborations are always welcome.</p>
+        <button class="card-tag">Mumbai, India</button>
+      </div>
 
-    <section id="projects" class="projects-section">
-        <h1>My Work</h1>
-        <div class="projects-wrapper">
-            <div class="projects-left">
-                <!-- <h2>Welcome to my project showcase! Each project below reflects my journey as a developer—solving real-world problems, exploring new technologies, and continuously improving. From full-stack web applications to sleek frontend designs, these works represent my passion for clean code, usability, and performance.</h2> -->
-                <p>Welcome to my project showcase! Each project below reflects my journey as a developer—solving real-world problems, exploring new technologies, and continuously improving. From full-stack web applications to sleek frontend designs, these works represent my passion for clean code, usability, and performance.</p>
-            </div>
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>View My Resume</h3>
+        <p>Want to know more about my experience and skills? Check out my resume to explore my journey in detail.</p>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="card-button">View Resume</a>
+      </div>
+    </div>
 
-            <div class="projects-right">
-                <img src="art.png" alt="">
-                <img src="car.png" alt="">
-                <img src="music.png" alt="">
-                <img src="pod.png" alt="">
-            </div>
-        </div>
-    </section>
+    <div class="connect-bar">
+      <h1>Connect me on →</h1>
+      <a href="mailto:yourname@example.com" class="social-icon1 email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/chetan-sawale-0a3917321/" target="_blank" class="social-icon1 linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ChetanSawale/" target="_blank" class="social-icon1 github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/yourusername" target="_blank" class="social-icon1 insta" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Thank you for visiting my portfolio. Let’s build something amazing together!</p>
+      <ul class="footer-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Contact</a></li>
+        <li><a href="mailto:you@example.com">Email Me</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+      </ul>
+      <p class="copyright">© 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
 
-
-    <section class="contact-section" id="connect">
-        <div class="contact-header">
-            <!-- <button class="contact-pill">Let's Connect</button> -->
-            <h1>Get in touch</h1>
-            <p>
-            Interested in collaborating, hiring, or just saying hello? I'd love to hear from you. Reach out using any of the options below!
-            </p>
-            </div>
-
-            <div class="contact-cards">
-            <div class="card">
-                <div class="icon">💬</div>
-                <h3>Send me a message</h3>
-                <p>Got a project idea, feedback, or just want to connect? Drop me a message — I'm always open to interesting conversations!</p>
-                <button class="card-button">Get in Touch →</button>
-            </div>
-
-            <div class="card">
-                <div class="icon">📍</div>
-                <h3>Location</h3>
-                <p>I'm currently based in Mumbai. Feel free to reach out — remote work and collaborations are always welcome.</p>
-                <button class="card-tag">Mumbai, India</button>
-            </div>
-
-            <div class="card">
-                <div class="icon">📄</div>
-                <h3>View My Resume</h3>
-                <p>Want to know more about my experience and skills? Check out my resume to explore my journey in detail.</p>
-                <button class="card-button">View Resume</button>
-            </div>
-            </div>
-        </div>
-        <div class="connect-bar">
-            <span class="connect-text"><h1>Connect me on →</h1></span>
-              <a href="mailto:yourname@example.com" class="social-icon1 email" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon1 linkedin" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/yourusername" target="_blank" class="social-icon1 github" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://instagram.com/yourusername" target="_blank" class="social-icon1 insta" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <p>Thank you for visiting my portfolio. Let’s build something amazing together!</p>
-            <ul class="footer-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Contact</a></li>
-            <li><a href="mailto:you@example.com">Email Me</a></li>
-            <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-            </ul>
-            <p class="copyright">© 2025 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-
-
-
-
+  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
