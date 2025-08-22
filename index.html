@@ -6,6 +6,7 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 </head>
 <body>
 <nav>
@@ -33,7 +34,7 @@
         </li>
       <li>
         <button id="darkModeToggle" aria-label="Toggle Dark Mode">
-            <img src="https://cdn-icons-png.freepik.com/512/9354/9354381.png" alt="Toggle dark mode" style="width: 24px; height: 24px;" />
+            <img src="light-mode.png" alt="Toggle dark mode" style="width: 24px; height: 24px;" />
         </button>
         </li>
     </ul>
@@ -62,7 +63,7 @@
         </div>
     </div>
   </main>
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section fade-in-section">
     <div class="con">
         <h1>Professional Skills</h1>
     </div>
@@ -125,7 +126,7 @@
             About Me
         </div>
     </section> -->
-    <section id="about" class="about-wrapper">
+    <section id="about" class="about-wrapper fade-in-section">
   <!-- Left Side -->
         <div class="about-left">
             <h1>ABOUT<br>ME</h1>
@@ -166,14 +167,14 @@
             <p class="title">CS Major Student</p>
             <ul class="contact-details">
                 <li>📞 +91 9699486717</li>
-                <li>📧 emma@example.com</li>
-                <li>📍 123 Your Street, City</li>
+                <li>📧 sawalechetan102@gmail.com</li>
+                <li>📍 Mumbai, India</li>
             </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section fade-in-section">
         <h1>My Work</h1>
         <div class="projects-wrapper">
             <div class="projects-left">
@@ -182,17 +183,24 @@
             </div>
 
             <div class="projects-right">
-                <img src="art.png" alt="">
-                <img src="car.png" alt="">
-                <img src="music.png" alt="">
-                <img src="pod.png" alt="">
+                <a href="https://artique-gallery.netlify.app/" target="_blank">
+                    <img src="art.png" alt="Art Project">
+                </a>
+                <a href="https://example.com/car" target="_blank">
+                    <img src="car.png" alt="Car Project">
+                </a>
+                <a href="https://example.com/music" target="_blank">
+                    <img src="music.png" alt="Music Project">
+                </a>
+                <a href="https://example.com/podcast" target="_blank">
+                    <img src="pod.png" alt="Podcast Project">
+                </a>
             </div>
         </div>
     </section>
 
 
-
-    <section class="contact-section" id="connect">
+    <section class="contact-section fade-in-section" id="connect">
         <div class="contact-header">
             <!-- <button class="contact-pill">Let's Connect</button> -->
             <h1>Get in touch</h1>
@@ -206,9 +214,8 @@
                 <div class="icon">💬</div>
                 <h3>Send me a message</h3>
                 <p>Got a project idea, feedback, or just want to connect? Drop me a message — I'm always open to interesting conversations!</p>
-                <button class="card-button">Get in Touch →</button>
+                <a href="mailto:yourname@gmail.com" class="card-button">Get in Touch →</a>
             </div>
-
             <div class="card">
                 <div class="icon">📍</div>
                 <h3>Location</h3>
@@ -220,7 +227,9 @@
                 <div class="icon">📄</div>
                 <h3>View My Resume</h3>
                 <p>Want to know more about my experience and skills? Check out my resume to explore my journey in detail.</p>
-                <button class="card-button">View Resume</button>
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="card-button">
+                    View Resume
+                </a>
             </div>
             </div>
         </div>
@@ -229,10 +238,10 @@
               <a href="mailto:yourname@example.com" class="social-icon1 email" aria-label="Email">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon1 linkedin" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/chetan-sawale-0a3917321/" target="_blank" class="social-icon1 linkedin" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" class="social-icon1 github" aria-label="GitHub">
+            <a href="https://github.com/ChetanSawale/" target="_blank" class="social-icon1 github" aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
             <a href="https://instagram.com/yourusername" target="_blank" class="social-icon1 insta" aria-label="Instagram">
