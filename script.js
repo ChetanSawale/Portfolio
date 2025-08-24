@@ -63,3 +63,60 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+
+  // Initialize the state based on screen size
+  function initializeCollapse() {
+    if (window.innerWidth <= 768) {
+      // Collapse sections on mobile
+      document.querySelectorAll('.collapsible-content').forEach(content => {
+        content.classList.remove('is-expanded');
+      });
+      toggleButtons.forEach(button => {
+        button.setAttribute('aria-expanded', 'false');
+        button.classList.remove('is-expanded');
+      });
+    } else {
+      // Expand sections on desktop
+      document.querySelectorAll('.collapsible-content').forEach(content => {
+        content.classList.add('is-expanded');
+      });
+      toggleButtons.forEach(button => {
+        button.setAttribute('aria-expanded', 'true');
+        button.classList.add('is-expanded');
+      });
+    }
+  }
+
+  // Set initial state on page load
+  initializeCollapse();
+
+  // Add event listeners to toggle buttons
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const contentId = button.getAttribute('aria-controls');
+      const content = document.getElementById(contentId);
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+      if (isExpanded) {
+        content.classList.remove('is-expanded');
+        button.setAttribute('aria-expanded', 'false');
+        button.classList.remove('is-expanded');
+      } else {
+        content.classList.add('is-expanded');
+        button.setAttribute('aria-expanded', 'true');
+        button.classList.add('is-expanded');
+      }
+    });
+  });
+
+  // Re-evaluate collapse state on window resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initializeCollapse, 250);
+  });
+});
